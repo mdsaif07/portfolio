@@ -240,9 +240,32 @@ body {
     height: auto;
     max-width: 492px;
     max-height: 492px;
-    border-radius: 90px;
-    /*box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;*/
-    border: #0ef 5px solid;
+    border-radius: 50%;
+    border: 5px solid #0ef;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.5); /* Cyan box shadow with transparency */
+}
+
+/* Media query for devices with a maximum width of 768px (e.g., tablets) */
+@media only screen and (max-width: 768px) {
+    .abt-res {
+        /* Adjust properties for smaller screens */
+        max-width: 300px;
+        max-height: 300px;
+        border-width: 3px;
+        border-radius: 50%;
+    }
+}
+
+/* Media query for devices with a maximum width of 480px (e.g., phones) */
+@media only screen and (max-width: 480px) {
+    .abt-res {
+        /* Adjust properties for smaller screens */
+        max-width: 200px;
+        max-height: 200px;
+        border-width: 2px;
+        border-radius: 50%;
+    }
 }
 
 .about-text {
